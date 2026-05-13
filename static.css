@@ -2,25 +2,105 @@ body{
     background-color: rgb(0, 0, 0);
     font-family: 'JetBrains Mono', monospace
 }
-#box{
-    position: absolute;
-    top: 30vh;
-    left: 10vh;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start;
-}
-h1 {
-    font-size: 70px;
-    margin: 0;
-    color: white;
-}
-p {
-    
-    font-size: 25px;
-    margin: 0;
-    color: white;
+* {
+    color: rgb(255, 255, 255);
 }
 a {
-    text-decoration: none; color: inherit;
+    text-decoration: none
+}
+.box-estrutura{
+    align-items: center;
+    margin-left: 13%;
+    width: 70%;
+    height: 300vh;
+}
+#box{
+    margin-top: 10vh;
+}
+#gitar{
+    animation: fade 0.5s ease;
+}
+#intro {
+    animation: fade 1.5s ease;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);}
+    to{
+        opacity: 1;
+        transform: translateX(0);}}
+h1 {
+    font-size: 40px;
+    margin: 0;
+}
+/*
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    NAVBAR                 ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   
+*/
+.navbar{
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    background: #141414;
+    border-radius: 15px;
+}
+.navbar a{
+    margin: 10px;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    opacity: 40%;
+}
+/*
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    CARD                   ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   
+*/
+.card a:hover{
+    color: black;
+    background-color: azure;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    margin-top: 70vh;
+    flex-wrap: wrap;
+}
+.card a{
+    transition: 0.5s;
+    background-color: #2f2f2f;
+    padding: 5px;
+    border-radius: 15px;
+}
+/*
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    PROJETO                   ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   
+*/
+.projeto{
+    margin: 30px;
+    background-color: #141414;
+    width: 80%;
+    height: 50%;
+    border-radius: 15px;
+}
+.projeto *{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+/*
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                    #######                   ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   
+*/
+#aboutme{
+    margin-top: 20vh;
 }
