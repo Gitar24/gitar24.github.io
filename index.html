@@ -3,62 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gitar24 👍</title>
+    <title>GITAR 👍</title>
     <link rel="stylesheet" href="static.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-   
-    <div class="box-estrutura">
 <!--       
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃                    NAVBAR                   ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                  TERMINAL                ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━┛   
 -->  
-        <nav class="navbar" style="opacity: 50%;">
-            <strong><p>GITAR24</p></strong>
-            <div class="navbar-button">
-                <a href="https://github.com/Gitar24">
-                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png" height="35px">
-                </a>
+<div class="terminal">
+        <pre class="ascii">
+ ██████╗ ██╗████████╗ █████╗ ██████╗ 
+██╔════╝ ██║╚══██╔══╝██╔══██╗██╔══██╗
+██║  ███╗██║   ██║   ███████║██████╔╝
+██║   ██║██║   ██║   ██╔══██║██╔══██╗
+╚██████╔╝██║   ██║   ██║  ██║██║  ██║
+ ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝
+        </pre>
 
-                <a href="https://www.linkedin.com/in/arthur-lopes-025289401/">
-                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png" height="30px">
-                </a>        
-            </div>
-        </nav>
-        <div id="box">
-            <h1 id="gitar">i'm gitar 🇧🇷 </h1>
-            <h1 id="intro">dev building things with python, sql & a lot of curiosity</h1>
+        <p>Welcome to my interactive portfolio terminal!</p>
+        <p>Type 'help' to see available commands.</p>
+        <div id="output"></div>
+        <div id="input-line">
+            <span>$</span>
+            <input id="commandinput" type="text" autofocus>
         </div>
-<!--       
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃                   CARD                   ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   
--->  
-        <div class="card">
-            <h1 style="margin-bottom: 4vh; font-size: 8vh;">Projects</h1>
-            <div class="projeto">
-                <h1>📖 CLUBE DO LIVRO </h1><br><h2>A read management project built with Flask and PostgreSQL..</h2>
-                <h2>● Python ● Flask ● PostgreSQL ● HTML & CSS</h2>
-                <h3><a href="https://github.com/Gitar24/Clube-do-Livro">Github</a></h3>
-            </div>
-            <!--       
-            ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-            ┃                    PROJETO                   ┃
-            ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛   
-            -->           
-            <div class="projeto">
-                <h1>🔒 ALOG</h1><br><h2>ALog monitors system logs in real time via journalctl, filters by what really matters, and automatically blocks suspicious IPs.</h2>
-                <h2>● Python </h2>
-                <h3><a href="https://github.com/Gitar24/ALog">Github</a></h3>
-            </div>
-            <div id="aboutme">
-                <h1>About Me</h1><br><br>
-                <h1>I'm a brazilian backend developer focused on Python,SQL and building projects to improve my skills. I enjoy understanding how systems work behind the scenes,especially databases and APIs.</h1> 
-            </div>       
-    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
